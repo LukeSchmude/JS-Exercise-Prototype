@@ -73,10 +73,10 @@ spencer.eat('sandwich');
 spencer.eat('salad');
 spencer.eat('Cake');
 
-// console.log(spencer.stomach);
+console.log(spencer.stomach);
 
 spencer.poop();
-// console.log(spencer.stomach);
+console.log('Task 1',spencer.stomach);
 
 
 
@@ -101,23 +101,17 @@ function Car(model, milesPerGallon) {
   this.tank = 0;
   this.odometer = 0;
 }
+
 Car.prototype.fill = function(gallons){
-  if(this.tank.length < 10){
-    this.tank.push(gallons);
+  if(this.tank <= 10){
+    this.tank += gallons;
   }
+  
 }
 
-Car.prototype.toString = function(){
-  return `${this.tank}`
-}
-const carOne = new Car('Nissan', 20, 0, 0);
 
-console.log(carOne.toString());
+const carOne = new Car('Nissan', 20,);
 
-carOne.fill(2)
-
-
-console.log(carOne)
 
 
 
@@ -147,7 +141,7 @@ Baby.prototype.play = function(){
 }
 
 const baby = new Baby('Leia', '2 Months', 'Rattle')
-console.log(baby.play('x'))
+console.log('Task 3',baby.play())
 
 
 
