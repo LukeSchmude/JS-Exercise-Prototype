@@ -154,10 +154,10 @@ console.log('Task 3',baby.play())
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/ Global everything that is JS
+  2. implicit: When invoked it checks the object left of the dot
+  3. New is a constructor function that return an object 
+  4. Explicit creates a new function that when called has its keywords set to the value given in argument
 */
 
 
